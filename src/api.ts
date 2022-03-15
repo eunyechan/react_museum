@@ -15,14 +15,19 @@ interface ImuseumObjectRecords {
   dateoflastpageview: string;
   division: string;
   rank: number;
-  id: number;
-  images: ImuseumObjectImages[];
+  id: string;
+  title: string;
+  copyright: string;
+  url: string;
+  objectid: string;
+
+  images: { date: string; iiifbaseuri: string; format: string; idsid: string };
+  seeAlso: { id: string; format: string; profile: string };
 }
 
 interface ImuseumObjectImages {
   date: string;
-  imageid: string;
-  baseimageurl: string;
+  iiifbaseuri: string;
 }
 
 export function getmuseums() {

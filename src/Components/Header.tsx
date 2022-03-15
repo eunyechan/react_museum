@@ -79,7 +79,7 @@ const HeaderDate = styled.div`
   padding: 2px;
   font-size: 12px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: #00959d;
 `;
 
